@@ -2,7 +2,7 @@ import React,{useEffect, useState} from 'react';
 import Footer from '../assets/Footer';
 import Navbar from '../assets/Navbar';
 import './../css/products.css'
-import {useHistory,useLocation} from 'react-router-dom';
+import {useHistory,useLocation,Link} from 'react-router-dom';
 
 const ProductPage = (props) => {
   let history = useHistory();
@@ -109,10 +109,13 @@ const ProductPage = (props) => {
                   <div className="agileshoppinggrids">
                     <div className="col-md-4 agileshoppinggrid agileshoppinggrid1">
                       <div className="grid">
+                        <Link to="/productDetails" >
                         <figure className="effect-apollo">
                           <img src="images/images/gowns/1front.JPG" alt="" />
                           <figcaption />
+                         
                         </figure>
+                        </Link>
                         <div className="item-info-product ">
                           <h4><a href="Detail-page.html">Anarkali</a></h4>
                           <div className="info-product-price">
@@ -140,10 +143,12 @@ const ProductPage = (props) => {
                     </div>
                     <div className="col-md-4 agileshoppinggrid agileshoppinggrid2">
                       <div className="grid">
+                      <Link to="/productDetails" >
                         <figure className="effect-apollo">
                           <img src="images/images/gowns/1Back.JPG" alt="Groovy Apparel" />
                           <figcaption />
                         </figure>
+                        </Link>
                         <div className="item-info-product ">
                           <h4><a href="Detail-page.html">Anarkali</a></h4>
                           <div className="info-product-price">
@@ -171,10 +176,12 @@ const ProductPage = (props) => {
                     </div>
                     <div className="col-md-4 agileshoppinggrid agileshoppinggrid1">
                       <div className="grid">
+                      <Link to="/productDetails" >
                         <figure className="effect-apollo">
                           <img src="images/images/gowns/6-1front.JPG" alt="" />
                           <figcaption />
                         </figure>
+                        </Link>
                         <div className="item-info-product ">
                           <h4><a href="Detail-page.html">Anarkali</a></h4>
                           <div className="info-product-price">

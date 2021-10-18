@@ -1,5 +1,6 @@
 import React,{useEffect} from 'react';
 import Navbar from '../assets/Navbar';
+import Footer from '../assets/Footer';
 import './../custom.css';
 import './../css/checkout.css'
 import {useHistory} from 'react-router-dom';
@@ -250,6 +251,8 @@ const Checkout = () => {
           </div>
         </div>
       </div>
+
+      <Footer />
 
         </>
     )

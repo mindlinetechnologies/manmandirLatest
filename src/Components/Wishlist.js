@@ -1,7 +1,7 @@
 import React,{useEffect} from 'react';
 import Footer from '../assets/Footer';
 import Navbar from '../assets/Navbar';
-import {useHistory} from 'react-router-dom';
+import {useHistory,Link} from 'react-router-dom';
 
 const Wishlist = () => {
   let history = useHistory();
@@ -47,12 +47,14 @@ const Wishlist = () => {
                   <div className="agileshoppinggrids">
                     <div className="col-md-4 agileshoppinggrid agileshoppinggrid1">
                       <div className="grid">
+                        <Link to="/productDetails">
                         <figure className="effect-apollo">
                           <img src="images/images/gowns/1front.JPG" alt="" />
                           <figcaption />
                         </figure>
+                        </Link>
                         <div className="item-info-product ">
-                          <h4><a href="Detail-page.html">Anarkali</a></h4>
+                          <h4><Link to="/productDetails">Anarkali</Link></h4>
                           <div className="info-product-price">
                             <p>Product details</p>
                           </div>
@@ -68,7 +70,7 @@ const Wishlist = () => {
                                 <input type="hidden" name="currency_code" defaultValue="rupee" />
                                 <input type="hidden" name="return" defaultValue=" " />
                                 <input type="hidden" name="cancel_return" defaultValue=" " />
-                                <input type="submit" name="submit" defaultValue="Move to cart" value="Move to cart" className="button" />
+                                <Link to="/cart"><input type="submit" name="submit" defaultValue="Move to cart" value="Move to cart" className="button" /></Link>
                               </fieldset>
                             </form>
                           </div>

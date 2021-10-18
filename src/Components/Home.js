@@ -24,16 +24,20 @@ const Home = () => {
           
       
                  <div className="agileheader" id="agileitshome">
-        {/* Navigation */}
-        <Navbar />
+                          {/* Navigation */}
+                          <Navbar />
+                          
+                          {/* end Navigation */}
+
+                    <div class="agileheader-topbar">
+                        
+                    </div>
+
         
-        {/* end Navigation */}
 
-        <div class="agileheader-topbar">
-            
-        </div>
+                  </div>
 
-        <div id="myCarousel" className="carousel slide" data-ride="carousel">
+                  <div id="myCarousel" className="carousel slide" data-ride="carousel">
         {/* Indicators */}
         <ol className="carousel-indicators">
           <li data-target="#myCarousel" data-slide-to={0} className="active" />
@@ -42,30 +46,30 @@ const Home = () => {
         </ol>
         {/* Wrapper for slides */}
         <div className="carousel-inner">
-          <div className="item active">
-            <img src="images/images/banner/7.jpg" alt="Los Angeles" />
-            <div className="carousel-caption">
-              <h1>Shopping time</h1>
-              <p>Offer on your favorite clothing is always so much fun!</p>
-              <input type="submit" defaultValue="SEND MESSAGE" value="Shop Now" style={{width:'50%'}}/>
-            </div>
-          </div>
-          <div className="item">
-            <img src="images/images/banner/7.jpg" alt="Chicago" />
-            <div className="carousel-caption">
-              <h1>Today's special deal</h1>
-              <p>Only for first 50 customer!</p>
-              <input type="submit" defaultValue="SEND MESSAGE" value="Shop Now" style={{width:'50%'}}/>
-            </div>
-          </div>
-          <div className="item">
-            <img src="images/images/banner/7.jpg" alt="New York" />
-            <div className="carousel-caption">
-              <h1>Discount offer</h1>
-              <p>For Wedding season. Buy our best products on over 50% sale. Grab it soon.</p>
-              <input type="submit" defaultValue="SEND MESSAGE" value="Shop Now" style={{width:'50%'}}/>
-            </div>
-          </div>
+              <div className="item active">
+                <img src="images/images/banner/7.jpg" alt="Los Angeles" />
+                <div className="carousel-caption">
+                  <h1>Shopping time</h1>
+                  <p>Offer on your favorite clothing is always so much fun!</p>
+                  <input type="submit" defaultValue="SEND MESSAGE" value="Shop Now" style={{width:'50%'}}/>
+                </div>
+              </div>
+              <div className="item">
+                  <img src="images/images/banner/7.jpg" alt="Chicago" />
+                    <div className="carousel-caption">
+                      <h1>Today's special deal</h1>
+                      <p>Only for first 50 customer!</p>
+                      <input type="submit" defaultValue="SEND MESSAGE" value="Shop Now" style={{width:'50%'}}/>
+                    </div>
+              </div>
+              <div className="item">
+                <img src="images/images/banner/7.jpg" alt="New York" />
+                <div className="carousel-caption">
+                  <h1>Discount offer</h1>
+                  <p>For Wedding season. Buy our best products on over 50% sale. Grab it soon.</p>
+                  <input type="submit" defaultValue="SEND MESSAGE" value="Shop Now" style={{width:'50%'}}/>
+                </div>
+              </div>
         </div>
         {/* Left and right controls */}
         <a className="left carousel-control" href="#myCarousel" data-slide="prev">
@@ -77,8 +81,6 @@ const Home = () => {
           <span className="sr-only">Next</span>
         </a>
       </div>
-
-        </div>
 
 {/* Latest-Arrivals */}
 <div className="wthreehome-latest">
@@ -162,9 +164,9 @@ const Home = () => {
                 classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a
                 Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure
                 Latin words, consectetur.</p>
-              <div className="wthreeshop-a">
+              {/* <div className="wthreeshop-a">
                 <a href="Product-page.html">SHOP DENIM COLLECTION</a>
-              </div>
+              </div> */}
             </div>
           </div>
           <div className="col-md-6 style-grid style-grid-2">
@@ -195,9 +197,9 @@ const Home = () => {
         <div className="aitsclearance-sales-text">
           <h2>ALL CLEARANCE ITEMS</h2>
           <h5>50% OFF <small>On selected products<sup>*</sup></small></h5>
-          <div className="wthreeshop-a">
+          {/* <div className="wthreeshop-a">
             <a href="offer-product.html">SHOP NOW</a>
-          </div>
+          </div> */}
         </div>
       </div>
       {/* //Clearance-Sale */}
